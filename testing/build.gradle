@@ -6,6 +6,17 @@ subprojects {
     apply plugin: 'io.qameta.allure'
 
     dependencies {
+        implementation group: 'org.aeonbits.owner', name: 'owner', version: ver.owner
+        implementation group: 'com.codeborne', name: 'selenide', version: ver.selenide
+        implementation group: 'io.qameta.allure', name: 'allure-junit5', version: ver.allure
+        implementation group: 'io.qameta.allure', name: 'allure-selenide', version: ver.allure
+
+        testImplementation group: 'org.junit.platform', name: 'junit-platform-launcher', version: ver.junit.platform
+        testImplementation group: 'org.junit.platform', name: 'junit-platform-runner', version: ver.junit.platform
+        testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: ver.junit.jupiter
+        testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: ver.junit.jupiter
+        testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: ver.junit.jupiter
+        compile group: 'org.aspectj', name: 'aspectjweaver', version: ver.aspectj
     }
     allure {
         version = ver.allure
@@ -13,8 +24,8 @@ subprojects {
         aspectjweaver = true
         configuration = 'compile'
         aspectjVersion = ver.aspectj
-        resultsDir = new File(buildscript.sourceFile.parentFile, 'build/allure-results')
-        reportDir = new File(buildscript.sourceFile.parentFile, '/build/reports/allure-report')
+        resultsDir = new File(buildscript.sourceFile.parentFile.parentFile, 'build/allure-results')
+        reportDir = new File(buildscript.sourceFile.parentFile.parentFile, '/build/reports/allure-report')
         downloadLinkFormat = 'https://dl.bintray.com/qameta/maven/io/qameta/allure/allure-commandline/%s/allure-commandline-%<s.zip'
         useJUnit5 {
             version = ver.allure

@@ -9,4 +9,5 @@ dependencies {
     implementation group: 'com.codeborne', name: 'selenide', version: ver.selenide
     implementation group: 'org.aeonbits.owner', name: 'owner', version: ver.owner
     implementation group: 'io.qameta.allure', name: 'allure-selenide', version: ver.allure
+    implementation "org.jetbrains.kotlin:kotlin-reflect"
 }
