@@ -1,0 +1,3 @@
+rootProject.name = 'kotlin-selenide-junit5-sandbox-allure'
+include ":common-test"
+include ":test-module"

@@ -1,0 +1,9 @@
+.gradle
+.idea
+.allure
+build
+*.iml
+**/out
+target
+gradle
+**/allure-results

@@ -1,0 +1,17 @@
+// Versions
+ext {
+    kotlin_version = '1.3.61'
+    ver = [
+            junit       : [
+                    platform    : '1.6.0-M1',
+                    jupiter     : '5.6.0-M1',
+                    dataProvider: '1.13.1'
+            ],
+            allure      : '2.13.1',
+            allure_junit: '3.19.2',
+            slf4j       : '1.7.30',
+            owner       : '1.0.10',
+            aspectj     : '1.9.5',
+            selenide    : '5.6.1'
+    ]
+}
