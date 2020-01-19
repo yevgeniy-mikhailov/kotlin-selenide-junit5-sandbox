@@ -1,3 +1,4 @@
-rootProject.name = 'kotlin-selenide-junit5-sandbox-allure'
+rootProject.name = 'kotlin-selenide-junit5-allure-sandbox'
 include ":common-test"
-include ":test-module"
+include ":testing"
+include ":testing:duckduckgo"

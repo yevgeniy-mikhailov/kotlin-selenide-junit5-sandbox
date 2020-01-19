@@ -40,7 +40,6 @@ allprojects {
 
     test {
         useJUnitPlatform {
-            excludeTags "Sequential"
         }
         doFirst {
             jvmArgs "-javaagent:${configurations.agent.singleFile}"
