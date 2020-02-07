@@ -5,5 +5,5 @@ build
 *.iml
 **/out
 target
-gradle
+*.jar
 **/allure-results
